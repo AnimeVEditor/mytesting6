@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjabee Rasoi | Authentic Royal Punjabi Cuisine in Kolkata</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Experience the royal taste of Punjab at Punjabee Rasoi in Kasba, Kolkata. Authentic Punjabi cuisine, rich tandoor flavours, and warm family dining. Rated 4.4★ by 630+ happy guests.">
+    <meta name="keywords" content="Punjabi food Kolkata, Tandoor Kolkata, Best North Indian food Kasba, Butter Chicken Kolkata, Punjabee Rasoi, Family Restaurant">
+    <meta name="author" content="Punjabee Rasoi">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Punjabee Rasoi | Authentic Royal Punjabi Cuisine">
+    <meta property="og:description" content="Experience the royal taste of Punjab at Punjabee Rasoi in Kasba, Kolkata. Authentic flavours, rich tandoor, and warm family dining.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://punjabeerasoi.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (FontAwesome via CDN for minimal impact) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Punjabee Rasoi",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "@id": "",
+      "url": "https://punjabeerasoi.com",
+      "telephone": "+919007076780",
+      "priceRange": "₹400-₹1200",
+      "menu": "https://punjabeerasoi.com/#menu",
+      "servesCuisine": ["Punjabi", "North Indian", "Tandoor"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "196, Chakraborty Para Road, Near Overhead Water Tank, Rajdanga, Kasba",
+        "addressLocality": "Kolkata",
+        "postalCode": "700107",
+        "addressRegion": "West Bengal",
+        "addressCountry": "IN"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "630"
+      }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables - Premium Palette */
+        :root {
+            /* Colors */
+            --maroon: #5a0b0b;
+            --maroon-light: #7b1113;
+            --gold: #d4af37;
+            --gold-light: #f3d56a;
+            --copper: #b87333;
+            
+            /* Light Theme */
+            --bg-main: #fdfbf7;
+            --bg-card: #ffffff;
+            --text-main: #2c1e1e;
+            --text-muted: #5c4d4d;
+            --border-color: rgba(212, 175, 55, 0.2);
+            --glass-bg: rgba(253, 251, 247, 0.85);
+            --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
+            --shadow-lg: 0 15px 30px rgba(90, 11, 11, 0.1);
+        }
+
+        .dark-theme {
+            /* Dark Theme */
+            --bg-main: #110909;
+            --bg-card: #1c1111;
+            --text-main: #fdfbf7;
+            --text-muted: #c2b5b5;
+            --border-color: rgba(212, 175, 55, 0.15);
+            --glass-bg: rgba(17, 9, 9, 0.85);
+            --shadow-sm: 0 4px 6px rgba(0,0,0,0.2);
+            --shadow-lg: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        h1, h2, h3, h4, h5, h6, .cinzel {
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* Typography Utilities */
+        .text-gold { color: var(--gold); }
+        .text-maroon { color: var(--maroon); }
+        .dark-theme .text-maroon { color: var(--gold-light); }
+        .text-center { text-align: center; }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--maroon);
+            position: relative;
+            display: inline-block;
+        }
+        .dark-theme .section-title { color: var(--gold); }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--copper);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .section-header { margin-bottom: 3rem; }
+
+        /* UI Components */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 12px 28px;
+            font-family: 'Cinzel', serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 0%; height: 100%;
+            background: rgba(255,255,255,0.1);
+            transition: width 0.3s ease;
+            z-index: -1;
+        }
+        .btn:hover::before { width: 100%; }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(90, 11, 11, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(90, 11, 11, 0.4);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold), #b8860b);
+            color: #111;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .dark-theme .btn-outline { color: var(--gold-light); }
+        .btn-outline:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .glass-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        section { padding: 6rem 0; position: relative; }
+
+        /* Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0; left: 0;
+            width: 0%; height: 4px;
+            background: var(--gold);
+            z-index: 9999;
+            transition: width 0.1s;
+        }
+
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            inset: 0;
+            background: var(--bg-main);
+            z-index: 10000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        .loader-spinner {
+            width: 50px; height: 50px;
+            border: 3px solid rgba(212, 175, 55, 0.3);
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        .loader-text {
+            margin-top: 1.5rem;
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--maroon);
+            letter-spacing: 3px;
+        }
+        .dark-theme .loader-text { color: var(--gold); }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        /* Header & Nav */
+        header {
+            position: fixed;
+            top: 0; left: 0; width: 100%;
+            z-index: 1000;
+            padding: 1.5rem 0;
+            transition: all 0.4s ease;
+            border-bottom: 1px solid transparent;
+        }
+        header.scrolled {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            padding: 1rem 0;
+            border-bottom-color: var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        header.scrolled .logo { color: var(--maroon); }
+        .dark-theme header.scrolled .logo { color: var(--gold); }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.9);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            padding-bottom: 4px;
+            transition: color 0.3s;
+        }
+        header.scrolled .nav-link { color: var(--text-main); }
+        .nav-link::after {
+            content: ''; position: absolute;
+            bottom: 0; left: 0; width: 0%; height: 2px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-link:hover { color: var(--gold); }
+
+        .nav-actions { display: flex; gap: 1rem; align-items: center; }
+        .theme-toggle {
+            background: none; border: none; cursor: pointer;
+            color: #fff; font-size: 1.2rem; transition: color 0.3s;
+        }
+        header.scrolled .theme-toggle { color: var(--text-main); }
+        .theme-toggle:hover { color: var(--gold); }
+
+        .mobile-toggle {
+            display: none; background: none; border: none;
+            color: #fff; font-size: 1.5rem; cursor: pointer;
+        }
+        header.scrolled .mobile-toggle { color: var(--text-main); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding: 0;
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover; background-position: center;
+            background-attachment: fixed;
+            z-index: -2;
+        }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to right, rgba(26,15,15,0.9) 0%, rgba(26,15,15,0.4) 100%);
+            z-index: -1;
+        }
+        .hero-content {
+            max-width: 800px;
+            color: #fff;
+            padding-top: 5rem;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(212,175,55,0.3);
+            padding: 8px 16px; border-radius: 30px; backdrop-filter: blur(5px);
+            margin-bottom: 1.5rem; font-size: 0.9rem;
+        }
+        .stars { color: var(--gold); letter-spacing: 2px; }
+        .hero h1 {
+            font-size: 4.5rem; line-height: 1.1; margin-bottom: 1.5rem;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9; max-width: 600px;
+        }
+        .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+        
+        .scroll-down {
+            position: absolute; bottom: 30px; left: 50%;
+            transform: translateX(-50%);
+            color: #fff; font-size: 1.5rem;
+            animation: bounce 2s infinite; opacity: 0.7;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+        }
+        .about-img-wrapper { position: relative; }
+        .about-img-1 {
+            width: 80%; border-radius: 12px; box-shadow: var(--shadow-lg);
+        }
+        .about-img-2 {
+            position: absolute; right: 0; bottom: -10%; width: 50%;
+            border: 8px solid var(--bg-main); border-radius: 12px;
+            box-shadow: var(--shadow-lg); transition: border-color 0.4s ease;
+        }
+        .about-content p { color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem; }
+        .signature-text { font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--gold); margin-top: 2rem; }
+
+        /* Features */
+        .features-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;
+        }
+        .feature-card {
+            padding: 2.5rem 1.5rem; text-align: center;
+            border-top: 4px solid transparent;
+        }
+        .feature-card:hover { border-top-color: var(--maroon); }
+        .dark-theme .feature-card:hover { border-top-color: var(--gold); }
+        .feature-icon {
+            font-size: 2.5rem; color: var(--copper); margin-bottom: 1.5rem;
+            display: inline-block; transition: transform 0.3s;
+        }
+        .feature-card:hover .feature-icon { transform: scale(1.1); }
+        .feature-card h3 { margin-bottom: 1rem; font-size: 1.3rem; }
+        .feature-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Menu & Dishes */
+        .menu-filter {
+            display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;
+        }
+        .filter-btn {
+            background: transparent; border: 1px solid var(--border-color);
+            padding: 8px 20px; border-radius: 30px; color: var(--text-main);
+            font-family: 'Poppins', sans-serif; cursor: pointer; transition: all 0.3s;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--maroon); color: #fff; border-color: var(--maroon);
+        }
+        .dark-theme .filter-btn.active, .dark-theme .filter-btn:hover {
+            background: var(--gold); color: #111; border-color: var(--gold);
+        }
+
+        .food-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2.5rem;
+        }
+        .food-card { display: flex; flex-direction: column; height: 100%; }
+        .food-img-wrapper {
+            position: relative; overflow: hidden; padding-top: 70%;
+        }
+        .food-img {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; transition: transform 0.5s ease;
+        }
+        .food-card:hover .food-img { transform: scale(1.08); }
+        .food-badge {
+            position: absolute; top: 15px; right: 15px;
+            background: var(--gold); color: #111; font-size: 0.8rem; font-weight: 600;
+            padding: 4px 10px; border-radius: 4px; z-index: 2;
+        }
+        .food-info { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .food-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; }
+        .food-title { font-size: 1.3rem; margin: 0; }
+        .food-price { font-family: 'Cinzel', serif; font-weight: 700; color: var(--maroon); font-size: 1.2rem; }
+        .dark-theme .food-price { color: var(--gold-light); }
+        .food-desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
+        .food-action { width: 100%; margin-top: auto; }
+
+        /* Chef's Recommendation */
+        .chef-section {
+            background: linear-gradient(rgba(26,15,15,0.9), rgba(26,15,15,0.9)), url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=2000') fixed;
+            background-size: cover; color: #fff;
+        }
+        .chef-card {
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(212,175,55,0.3);
+            border-radius: 12px; padding: 3rem 2rem; text-align: center;
+            backdrop-filter: blur(10px); max-width: 800px; margin: 0 auto;
+        }
+        .chef-img {
+            width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1.5rem;
+            border: 3px solid var(--gold); object-fit: cover;
+        }
+
+        /* AI Food Guide */
+        .ai-guide {
+            background: var(--bg-card); border-radius: 16px; padding: 3rem;
+            box-shadow: var(--shadow-lg); text-align: center; border: 1px solid var(--border-color);
+        }
+        .ai-step { display: none; animation: fadeIn 0.5s ease forwards; }
+        .ai-step.active { display: block; }
+        .ai-options { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+        .ai-btn {
+            padding: 15px 30px; border: 2px solid var(--maroon); border-radius: 8px;
+            background: transparent; color: var(--text-main); font-weight: 600;
+            cursor: pointer; transition: all 0.3s;
+        }
+        .dark-theme .ai-btn { border-color: var(--gold); }
+        .ai-btn:hover { background: var(--maroon); color: #fff; }
+        .dark-theme .ai-btn:hover { background: var(--gold); color: #111; }
+        #ai-result-content { margin: 2rem 0; font-size: 1.2rem; }
+        .result-dish { font-family: 'Cinzel', serif; color: var(--maroon); font-size: 1.8rem; display: block; margin: 1rem 0; }
+        .dark-theme .result-dish { color: var(--gold); }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;
+            grid-auto-rows: 250px;
+        }
+        .gallery-item {
+            position: relative; overflow: hidden; border-radius: 8px; cursor: pointer;
+        }
+        .gallery-item:nth-child(2) { grid-row: span 2; }
+        .gallery-item:nth-child(5) { grid-column: span 2; }
+        .gallery-img {
+            width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;
+        }
+        .gallery-overlay {
+            position: absolute; inset: 0; background: rgba(90,11,11,0.6);
+            display: flex; justify-content: center; align-items: center;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .dark-theme .gallery-overlay { background: rgba(0,0,0,0.6); }
+        .gallery-item:hover .gallery-img { transform: scale(1.1); }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay i { color: #fff; font-size: 2rem; transform: translateY(20px); transition: transform 0.3s ease; }
+        .gallery-item:hover .gallery-overlay i { transform: translateY(0); }
+
+        /* Lightbox */
+        #lightbox {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 10000;
+            display: none; justify-content: center; align-items: center; padding: 2rem;
+        }
+        #lightbox.active { display: flex; animation: fadeIn 0.3s ease; }
+        #lightbox img { max-width: 90%; max-height: 90vh; border-radius: 4px; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+        .close-lightbox {
+            position: absolute; top: 20px; right: 30px; color: #fff; font-size: 2.5rem;
+            cursor: pointer; transition: color 0.3s;
+        }
+        .close-lightbox:hover { color: var(--gold); }
+
+        /* Reviews */
+        .review-slider {
+            display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+            gap: 2rem; padding: 2rem 0; scrollbar-width: none;
+        }
+        .review-slider::-webkit-scrollbar { display: none; }
+        .review-card {
+            min-width: 350px; scroll-snap-align: center;
+            padding: 2.5rem; text-align: center;
+        }
+        .review-stars { color: var(--gold); margin-bottom: 1rem; font-size: 1.2rem; }
+        .review-text { font-style: italic; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .review-author { font-weight: 600; font-family: 'Cinzel', serif; }
+
+        /* Location */
+        .location-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: stretch;
+        }
+        .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+        .info-item { display: flex; gap: 1.5rem; align-items: flex-start; }
+        .info-icon {
+            width: 50px; height: 50px; border-radius: 50%;
+            background: rgba(212,175,55,0.1); color: var(--copper);
+            display: flex; justify-content: center; align-items: center; font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .info-content h4 { font-size: 1.2rem; margin-bottom: 0.25rem; }
+        .info-content p { color: var(--text-muted); }
+        .map-container {
+            border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg);
+            min-height: 400px; border: 1px solid var(--border-color);
+        }
+        .map-container iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+        /* Footer */
+        footer {
+            background: #110909; color: #fff; padding-top: 5rem;
+            border-top: 4px solid var(--gold);
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem;
+        }
+        .footer-about p { color: #aaa; margin: 1.5rem 0; max-width: 400px; }
+        .social-links { display: flex; gap: 1rem; }
+        .social-link {
+            width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2);
+            display: flex; justify-content: center; align-items: center; transition: all 0.3s;
+        }
+        .social-link:hover { background: var(--gold); border-color: var(--gold); color: #111; transform: translateY(-3px); }
+        .footer-links h4 { font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--gold); }
+        .footer-links ul { display: flex; flex-direction: column; gap: 0.8rem; }
+        .footer-links a { color: #aaa; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--gold); padding-left: 5px; }
+        .footer-bottom {
+            text-align: center; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); color: #777; font-size: 0.9rem;
+        }
+        .disclaimer { margin-top: 1rem; font-size: 0.8rem; opacity: 0.7; }
+
+        /* Floating Actions */
+        .floating-actions {
+            position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 999;
+        }
+        .float-btn {
+            width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            font-size: 1.8rem; color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-decoration: none;
+        }
+        .float-wa { background: #25D366; }
+        .float-call { background: var(--maroon); }
+        .float-top { background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-color); font-size: 1.2rem; opacity: 0; pointer-events: none; }
+        .float-top.visible { opacity: 1; pointer-events: auto; }
+        .float-btn:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+
+        /* Mobile Nav Dock */
+        .mobile-dock {
+            display: none; position: fixed; bottom: 0; left: 0; width: 100%;
+            background: var(--glass-bg); backdrop-filter: blur(15px);
+            border-top: 1px solid var(--border-color); z-index: 1000;
+            padding: 10px 0; padding-bottom: calc(10px + env(safe-area-inset-bottom));
+        }
+        .dock-items { display: flex; justify-content: space-around; align-items: center; }
+        .dock-item {
+            display: flex; flex-direction: column; align-items: center; gap: 5px;
+            color: var(--text-muted); font-size: 0.75rem; text-decoration: none; transition: color 0.3s;
+        }
+        .dock-item i { font-size: 1.2rem; }
+        .dock-item.active, .dock-item:hover { color: var(--maroon); }
+        .dark-theme .dock-item.active, .dark-theme .dock-item:hover { color: var(--gold); }
+
+        /* Animation Classes */
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: 0.1s; } .delay-2 { transition-delay: 0.2s; } .delay-3 { transition-delay: 0.3s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 3.5rem; }
+            .about-grid, .location-grid { grid-template-columns: 1fr; }
+            .about-img-2 { width: 40%; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .nav-links, .nav-actions { display: none; } /* Use mobile dock and sidebar */
+            .mobile-toggle { display: block; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero-btns { flex-direction: column; width: 100%; }
+            .btn { width: 100%; justify-content: center; }
+            section { padding: 4rem 0; }
+            .floating-actions { bottom: 80px; right: 20px; } /* Above dock */
+            .float-btn { width: 50px; height: 50px; font-size: 1.5rem; }
+            .mobile-dock { display: block; }
+            .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+        }
+
+        /* Mobile Sidebar Menu */
+        .mobile-sidebar {
+            position: fixed; top: 0; right: -100%; width: 80%; max-width: 300px; height: 100vh;
+            background: var(--bg-card); z-index: 1001; padding: 2rem;
+            box-shadow: -5px 0 20px rgba(0,0,0,0.1); transition: right 0.4s ease;
+            display: flex; flex-direction: column;
+        }
+        .mobile-sidebar.open { right: 0; }
+        .sidebar-close {
+            align-self: flex-end; background: none; border: none; font-size: 1.8rem;
+            color: var(--text-main); cursor: pointer; margin-bottom: 2rem;
+        }
+        .sidebar-links { display: flex; flex-direction: column; gap: 1.5rem; }
+        .sidebar-link { font-size: 1.2rem; font-family: 'Cinzel', serif; font-weight: 600; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        .sidebar-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1000;
+            display: none; opacity: 0; transition: opacity 0.4s;
+        }
+        .sidebar-overlay.active { display: block; opacity: 1; }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">PUNJABEE RASOI</div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-crown text-gold"></i>
+                <span>Punjabee Rasoi</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#menu" class="btn btn-gold btn-sm" style="padding: 8px 20px; font-size: 0.9rem;">Order Now</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="sidebar-close" id="sidebarClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="sidebar-links">
+            <a href="#home" class="sidebar-link">Home</a>
+            <a href="#about" class="sidebar-link">Our Story</a>
+            <a href="#menu" class="sidebar-link">Menu</a>
+            <a href="#gallery" class="sidebar-link">Gallery</a>
+            <a href="#contact" class="sidebar-link">Location</a>
+            <div style="margin-top: 2rem;">
+                <button class="theme-toggle" id="themeToggleMobile" style="color: var(--text-main); font-size: 1.5rem;">
+                    <i class="fa-solid fa-moon"></i> Toggle Theme
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <div class="hero-badge">
+                    <div class="stars">★★★★★</div>
+                    <span>4.4 Rating (630+ Guests)</span>
+                </div>
+                <h1>Experience the Royal Taste of Punjab</h1>
+                <p>Authentic Punjabi Cuisine • Rich Tandoor Flavours • Warm Family Dining • Served with Love in Kolkata</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="https://wa.me/919007076780?text=Hello%20Punjabee%20Rasoi,%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" class="btn btn-outline">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll Down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-grid">
+            <div class="about-content animate-on-scroll">
+                <h4 class="section-subtitle">Our Story</h4>
+                <h2 class="section-title">A Legacy of Authentic Flavours</h2>
+                <p>Welcome to Punjabee Rasoi, where every dish tells a story of rich heritage and culinary passion. Located in the heart of Kolkata, we bring the vibrant, robust, and heartwarming flavors of authentic North Indian and Punjabi cuisine straight to your table.</p>
+                <p>From our signature slow-cooked Dal Makhani to our perfectly charred Tandoori specialties, every recipe is crafted using fresh, premium ingredients and traditional cooking methods. Experience warm hospitality in a setting designed for family dining and unforgettable moments.</p>
+                <div class="signature-text delay-1">Taste the Tradition</div>
+            </div>
+            <div class="about-img-wrapper animate-on-scroll delay-2">
+                <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800" alt="Authentic Spices" class="about-img-1 lazy">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600" alt="Restaurant Ambiance" class="about-img-2 lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="features" style="background-color: rgba(212, 175, 55, 0.03);">
+        <div class="container">
+            <div class="text-center section-header animate-on-scroll">
+                <h4 class="section-subtitle">Why Choose Us</h4>
+                <h2 class="section-title">The Royal Experience</h2>
+            </div>
+            <div class="features-grid">
+                <div class="glass-card feature-card animate-on-scroll delay-1">
+                    <i class="fa-solid fa-fire-burner feature-icon"></i>
+                    <h3>Live Tandoor</h3>
+                    <p>Experience the authentic smoky flavours infused by our traditional clay oven.</p>
+                </div>
+                <div class="glass-card feature-card animate-on-scroll delay-2">
+                    <i class="fa-solid fa-leaf feature-icon"></i>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We source the finest spices and freshest produce for uncompromised quality.</p>
+                </div>
+                <div class="glass-card feature-card animate-on-scroll delay-3">
+                    <i class="fa-solid fa-users feature-icon"></i>
+                    <h3>Family Friendly</h3>
+                    <p>A warm, inviting atmosphere perfect for creating memories with loved ones.</p>
+                </div>
+                <div class="glass-card feature-card animate-on-scroll delay-4">
+                    <i class="fa-solid fa-motorcycle feature-icon"></i>
+                    <h3>Swift Delivery</h3>
+                    <p>Enjoy our premium cuisine in the comfort of your home, delivered hot and fresh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes & Menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="text-center section-header animate-on-scroll">
+                <h4 class="section-subtitle">Culinary Masterpieces</h4>
+                <h2 class="section-title">Our Menu</h2>
+            </div>
+            
+            <div class="menu-filter animate-on-scroll delay-1">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="signature">Signature</button>
+                <button class="filter-btn" data-filter="tandoor">Tandoor</button>
+                <button class="filter-btn" data-filter="mains">Mains</button>
+                <button class="filter-btn" data-filter="breads">Breads</button>
+            </div>
+
+            <div class="food-grid">
+                <!-- Card 1 -->
+                <div class="glass-card food-card animate-on-scroll item-signature item-mains">
+                    <div class="food-img-wrapper">
+                        <span class="food-badge">Signature</span>
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&q=80&w=800" alt="Butter Chicken" class="food-img lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-header">
+                            <h3 class="food-title">Classic Butter Chicken</h3>
+                            <span class="food-price">₹450</span>
+                        </div>
+                        <p class="food-desc">Tender chicken tikka simmered in a rich, creamy, and mildly spiced tomato gravy.</p>
+                        <a href="https://wa.me/919007076780?text=I'd%20like%20to%20order%20Classic%20Butter%20Chicken" target="_blank" class="btn btn-outline food-action"><i class="fa-brands fa-whatsapp"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card food-card animate-on-scroll delay-1 item-signature item-mains">
+                    <div class="food-img-wrapper">
+                        <span class="food-badge">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800" alt="Dal Makhani" class="food-img lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-header">
+                            <h3 class="food-title">Dal Makhani Special</h3>
+                            <span class="food-price">₹320</span>
+                        </div>
+                        <p class="food-desc">Black lentils slow-cooked overnight with tomatoes, butter, and cream.</p>
+                        <a href="https://wa.me/919007076780?text=I'd%20like%20to%20order%20Dal%20Makhani" target="_blank" class="btn btn-outline food-action"><i class="fa-brands fa-whatsapp"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card food-card animate-on-scroll delay-2 item-tandoor item-signature">
+                    <div class="food-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&q=80&w=800" alt="Paneer Tikka" class="food-img lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-header">
+                            <h3 class="food-title">Tandoori Paneer Tikka</h3>
+                            <span class="food-price">₹350</span>
+                        </div>
+                        <p class="food-desc">Cottage cheese cubes marinated in yogurt and spices, char-grilled to perfection.</p>
+                        <a href="https://wa.me/919007076780?text=I'd%20like%20to%20order%20Paneer%20Tikka" target="_blank" class="btn btn-outline food-action"><i class="fa-brands fa-whatsapp"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card food-card animate-on-scroll item-tandoor">
+                    <div class="food-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" alt="Tandoori Chicken" class="food-img lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-header">
+                            <h3 class="food-title">Afghani Tandoori Chicken</h3>
+                            <span class="food-price">₹480</span>
+                        </div>
+                        <p class="food-desc">Spring chicken marinated in a creamy cashew paste and roasted in the clay oven.</p>
+                        <a href="https://wa.me/919007076780" target="_blank" class="btn btn-outline food-action"><i class="fa-brands fa-whatsapp"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card food-card animate-on-scroll delay-1 item-mains">
+                    <div class="food-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=800" alt="Biryani" class="food-img lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-header">
+                            <h3 class="food-title">Mutton Dum Biryani</h3>
+                            <span class="food-price">₹550</span>
+                        </div>
+                        <p class="food-desc">Aromatic basmati rice cooked with tender mutton pieces and exotic spices.</p>
+                        <a href="https://wa.me/919007076780" target="_blank" class="btn btn-outline food-action"><i class="fa-brands fa-whatsapp"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card food-card animate-on-scroll delay-2 item-breads">
+                    <div class="food-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&q=80&w=800" alt="Garlic Naan" class="food-img lazy">
+                    </div>
+                    <div class="food-info">
+                        <div class="food-header">
+                            <h3 class="food-title">Butter Garlic Naan</h3>
+                            <span class="food-price">₹90</span>
+                        </div>
+                        <p class="food-desc">Soft, fluffy Indian bread topped with minced garlic and rich butter.</p>
+                        <a href="https://wa.me/919007076780" target="_blank" class="btn btn-outline food-action"><i class="fa-brands fa-whatsapp"></i> Order Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#contact" class="btn btn-gold">View Full Menu at Restaurant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Recommendation & AI Guide -->
+    <section class="chef-section">
+        <div class="container">
+            <div class="chef-card animate-on-scroll">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80&w=400" alt="Chef Signature" class="chef-img lazy">
+                <h4 class="section-subtitle" style="color: var(--gold);">Chef's Recommendation</h4>
+                <h2 class="cinzel" style="font-size: 2.5rem; margin-bottom: 1rem;">Rara Gosht Punjabi</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;">"A dual delight of tender mutton chunks slow-cooked in a rich minced mutton gravy. Perfectly paired with a crisp Tandoori Roti. A true royal feast."</p>
+                <a href="https://wa.me/919007076780" class="btn btn-primary">Order Chef's Special</a>
+            </div>
+
+            <!-- AI Food Guide -->
+            <div class="ai-guide animate-on-scroll" style="margin-top: 5rem;" id="aiGuide">
+                <h3 class="cinzel" style="font-size: 2rem; color: var(--gold); margin-bottom: 1rem;">Not sure what to order?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Let our interactive guide find the perfect meal for you.</p>
+                
+                <div class="ai-step active" id="step1">
+                    <h4>Do you prefer Vegetarian or Non-Vegetarian?</h4>
+                    <div class="ai-options">
+                        <button class="ai-btn" onclick="aiNext(1, 'veg')">Vegetarian</button>
+                        <button class="ai-btn" onclick="aiNext(1, 'nonveg')">Non-Vegetarian</button>
+                    </div>
+                </div>
+
+                <div class="ai-step" id="step2">
+                    <h4>How spicy do you like your food?</h4>
+                    <div class="ai-options">
+                        <button class="ai-btn" onclick="aiNext(2, 'mild')">Mild & Creamy</button>
+                        <button class="ai-btn" onclick="aiNext(2, 'spicy')">Spicy & Robust</button>
+                    </div>
+                </div>
+
+                <div class="ai-step" id="step3">
+                    <h4>What's your preferred accompaniment?</h4>
+                    <div class="ai-options">
+                        <button class="ai-btn" onclick="aiNext(3, 'bread')">Naan / Roti</button>
+                        <button class="ai-btn" onclick="aiNext(3, 'rice')">Rice / Biryani</button>
+                    </div>
+                </div>
+
+                <div class="ai-step" id="step4">
+                    <div id="ai-result-content">
+                        <h4>We Recommend:</h4>
+                        <span class="result-dish" id="resultDish">Butter Chicken & Garlic Naan</span>
+                        <p id="resultDesc">A creamy, mild delight perfectly paired with buttery bread.</p>
+                    </div>
+                    <div class="ai-options">
+                        <a href="#" id="resultOrder" class="btn btn-gold" target="_blank"><i class="fa-brands fa-whatsapp"></i> Order This</a>
+                        <button class="btn btn-outline" onclick="aiReset()">Start Over</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="text-center section-header animate-on-scroll">
+                <h4 class="section-subtitle">Visual Feast</h4>
+                <h2 class="section-title">Our Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Restaurant Interior" class="gallery-img lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-1" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&q=80&w=800" alt="Spices" class="gallery-img lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-2" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" alt="Tandoori" class="gallery-img lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=800" alt="Curry" class="gallery-img lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+                <div class="gallery-item animate-on-scroll delay-1" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&q=80&w=1200" alt="Feast" class="gallery-img lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Zoomed Image">
+    </div>
+
+    <!-- Reviews Section -->
+    <section id="reviews" style="background-color: rgba(212, 175, 55, 0.03);">
+        <div class="container">
+            <div class="text-center section-header animate-on-scroll">
+                <h4 class="section-subtitle">Guest Book</h4>
+                <h2 class="section-title">What They Say</h2>
+                <div class="stars" style="font-size: 1.5rem;">★★★★★</div>
+                <p>4.4 Google Rating from 630+ Reviews</p>
+            </div>
+            
+            <div class="review-slider animate-on-scroll">
+                <div class="glass-card review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The Butter Chicken is absolutely divine! The ambiance is perfect for a family dinner. Authentic Punjabi taste right here in Kolkata."</p>
+                    <h4 class="review-author">- Rahul S.</h4>
+                </div>
+                <div class="glass-card review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best Dal Makhani I've had in a long time. The service is prompt and the staff is very courteous. Highly recommended for North Indian food lovers."</p>
+                    <h4 class="review-author">- Priya M.</h4>
+                </div>
+                <div class="glass-card review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">"Great Tandoori items. The paneer was soft and melted in the mouth. A bit crowded on weekends, but the food makes up for the wait."</p>
+                    <h4 class="review-author">- Amit K.</h4>
+                </div>
+                <div class="glass-card review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Excellent hospitality and brilliant food. The Garlic Naan and Mutton Rogan Josh are a must-try. Will definitely visit again!"</p>
+                    <h4 class="review-author">- Sneha D.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact">
+        <div class="container location-grid">
+            <div class="contact-info animate-on-scroll">
+                <h4 class="section-subtitle">Visit Us</h4>
+                <h2 class="section-title">We Await Your Arrival</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-content">
+                        <h4>Address</h4>
+                        <p>196, Chakraborty Para Road,<br>Near Overhead Water Tank,<br>Rajdanga, Kasba, Kolkata,<br>West Bengal – 700107</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-content">
+                        <h4>Reservation & Delivery</h4>
+                        <p><a href="tel:+919007076780" style="color: inherit;">+91 90070 76780</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="info-content">
+                        <h4>Opening Hours</h4>
+                        <p>Everyday: 12:00 PM - 10:30 PM</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <a href="https://www.google.com/maps/place/Punjabee+Rasoi" target="_blank" class="btn btn-primary">Get Directions</a>
+                    <a href="tel:+919007076780" class="btn btn-outline">Call Now</a>
+                </div>
+            </div>
+            
+            <div class="map-container animate-on-scroll delay-2">
+                <!-- Using a standard embed based on provided address. -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.253689406606!2d88.38870131495886!3d22.5321300852033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276a0862080dd%3A0x8e8eb467000d23!2sPunjabee%20Rasoi!5e0!3m2!1sen!2sin!4v1689100000000!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Punjabee Rasoi Google Maps Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo" style="color: var(--gold);">
+                        <i class="fa-solid fa-crown"></i> Punjabee Rasoi
+                    </a>
+                    <p>Experience the most authentic North Indian and Punjabi flavours in Kolkata. Perfect for family dining, celebrations, and creating memories over delicious food.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Punjabee Rasoi. All Rights Reserved.</p>
+                <p class="disclaimer">Disclaimer: This is an unofficial concept website created using publicly available information for demonstration purposes only. It is not officially affiliated with Punjabee Rasoi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions (Desktop) -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919007076780?text=Hello%20Punjabee%20Rasoi,%20I%20visited%20your%20website%20and%20would%20like%20to%20reserve%20a%20table." target="_blank" class="float-btn float-wa" aria-label="WhatsApp Us">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919007076780" class="float-btn float-call" aria-label="Call Us">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#home" class="float-btn float-top" id="backToTop" aria-label="Back to Top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <!-- Mobile Dock (Bottom Navigation) -->
+    <nav class="mobile-dock">
+        <div class="container dock-items">
+            <a href="#home" class="dock-item active"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#menu" class="dock-item"><i class="fa-solid fa-utensils"></i> Menu</a>
+            <a href="tel:+919007076780" class="dock-item"><i class="fa-solid fa-phone"></i> Call</a>
+            <a href="https://wa.me/919007076780" class="dock-item"><i class="fa-brands fa-whatsapp"></i> Chat</a>
+        </div>
+    </nav>
+
+    <!-- JavaScript -->
+    <script>
+        // 1. Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => { preloader.style.visibility = 'hidden'; }, 600);
+            
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+
+        // 2. Scroll Progress & Header Change & Back to Top
+        const header = document.getElementById('header');
+        const scrollProgress = document.getElementById('scrollProgress');
+        const backToTop = document.getElementById('backToTop');
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const dockItems = document.querySelectorAll('.dock-item');
+
+        window.addEventListener('scroll', () => {
+            const scrollPx = document.documentElement.scrollTop;
+            const winHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = `${(scrollPx / winHeight) * 100}%`;
+            scrollProgress.style.width = scrolled;
+
+            if (scrollPx > 50) {
+                header.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
+
+            // Active Navigation Link Update
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+            
+            dockItems.forEach(item => {
+                if(item.getAttribute('href').includes(current)) {
+                    dockItems.forEach(d => d.classList.remove('active'));
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // 3. Theme Toggle (Dark/Light Mode)
+        const themeToggles = [document.getElementById('themeToggle'), document.getElementById('themeToggleMobile')];
+        const body = document.body;
+        
+        // Check local storage
+        if(localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-theme');
+            updateThemeIcons(true);
+        }
+
+        themeToggles.forEach(toggle => {
+            if(toggle) {
+                toggle.addEventListener('click', () => {
+                    body.classList.toggle('dark-theme');
+                    const isDark = body.classList.contains('dark-theme');
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                    updateThemeIcons(isDark);
+                });
+            }
+        });
+
+        function updateThemeIcons(isDark) {
+            themeToggles.forEach(t => {
+                if(t) {
+                    t.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' + (t.id === 'themeToggleMobile' ? ' Light Mode' : '') 
+                                         : '<i class="fa-solid fa-moon"></i>' + (t.id === 'themeToggleMobile' ? ' Dark Mode' : '');
+                }
+            });
+        }
+
+        // 4. Mobile Sidebar Menu
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+        function openSidebar() {
+            mobileSidebar.classList.add('open');
+            sidebarOverlay.classList.add('active');
+        }
+        function closeSidebar() {
+            mobileSidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('active');
+        }
+
+        mobileToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        sidebarOverlay.addEventListener('click', closeSidebar);
+        sidebarLinks.forEach(link => link.addEventListener('click', closeSidebar));
+
+        // 5. Intersection Observer for Scroll Animations
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Unobserve after animating if you want it to happen only once
+                    // observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // 6. Menu Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const foodCards = document.querySelectorAll('.food-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                foodCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'flex';
+                        setTimeout(() => card.style.opacity = '1', 50);
+                    } else {
+                        if (card.classList.contains(`item-${filter}`)) {
+                            card.style.display = 'flex';
+                            setTimeout(() => card.style.opacity = '1', 50);
+                        } else {
+                            card.style.opacity = '0';
+                            setTimeout(() => card.style.display = 'none', 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // 7. Lightbox for Gallery
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        function openLightbox(element) {
+            const imgSrc = element.querySelector('img').src;
+            // Get higher res image for lightbox
+            lightboxImg.src = imgSrc.replace('&w=800', '&w=1600');
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+        // 8. AI Food Guide Logic
+        let aiSelections = {};
+        
+        function aiNext(currentStep, choice) {
+            document.getElementById(`step${currentStep}`).classList.remove('active');
+            aiSelections[`step${currentStep}`] = choice;
+            
+            if (currentStep < 3) {
+                document.getElementById(`step${currentStep + 1}`).classList.add('active');
+            } else {
+                generateAIResult();
+            }
+        }
+
+        function generateAIResult() {
+            const s1 = aiSelections.step1;
+            const s2 = aiSelections.step2;
+            const s3 = aiSelections.step3;
+            
+            let dish = "";
+            let desc = "";
+            
+            if(s1 === 'veg' && s2 === 'mild' && s3 === 'bread') { dish = "Paneer Butter Masala & Butter Naan"; desc = "Rich, creamy cottage cheese paired with soft buttery bread."; }
+            else if(s1 === 'veg' && s2 === 'spicy' && s3 === 'bread') { dish = "Kadai Paneer & Garlic Naan"; desc = "Spicy, wok-tossed paneer with robust garlic flavored bread."; }
+            else if(s1 === 'veg' && s2 === 'mild' && s3 === 'rice') { dish = "Dal Makhani & Jeera Rice"; desc = "Our signature slow-cooked black lentils with cumin-tempered rice."; }
+            else if(s1 === 'veg' && s2 === 'spicy' && s3 === 'rice') { dish = "Veg Dum Biryani & Raita"; desc = "Aromatic spiced rice cooked with seasonal vegetables."; }
+            
+            else if(s1 === 'nonveg' && s2 === 'mild' && s3 === 'bread') { dish = "Classic Butter Chicken & Naan"; desc = "The legendary creamy tomato gravy with tender chicken."; }
+            else if(s1 === 'nonveg' && s2 === 'spicy' && s3 === 'bread') { dish = "Mutton Rogan Josh & Tandoori Roti"; desc = "Fiery, aromatic Kashmiri style mutton curry with crisp roti."; }
+            else if(s1 === 'nonveg' && s2 === 'mild' && s3 === 'rice') { dish = "Chicken Tikka Masala & Pulao"; desc = "Roasted chicken chunks in a creamy, flavorful sauce over rice."; }
+            else if(s1 === 'nonveg' && s2 === 'spicy' && s3 === 'rice') { dish = "Mutton Dum Biryani"; desc = "The royal feast. Spiced meat layered with fragrant basmati rice."; }
+            else { dish = "Chef's Special Thali"; desc = "A little bit of everything to satisfy your cravings."; }
+
+            document.getElementById('resultDish').textContent = dish;
+            document.getElementById('resultDesc').textContent = desc;
+            
+            const waMsg = `Hello Punjabee Rasoi, I'd like to order the recommended: ${dish}`;
+            document.getElementById('resultOrder').href = `https://wa.me/919007076780?text=${encodeURIComponent(waMsg)}`;
+            
+            document.getElementById('step4').classList.add('active');
+        }
+
+        function aiReset() {
+            document.getElementById('step4').classList.remove('active');
+            document.getElementById('step1').classList.add('active');
+            aiSelections = {};
+        }
+
+    </script>
+</body>
+</html>
